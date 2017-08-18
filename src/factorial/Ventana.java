@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package factorial;
 
 import java.awt.event.ActionEvent;
@@ -10,10 +6,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.*;
 
-/**
- *
- * @author Alumno
- */
+
 public class Ventana extends JFrame implements ActionListener{
     
     public int num = 0;
@@ -79,6 +72,8 @@ public class Ventana extends JFrame implements ActionListener{
         for(int i=1; i>0 && i<=num; i++) {
             numer = numer * i;
         }
+        
+        
         resultFact = numer;
         texto2.setText(String.valueOf(resultFact));
         ArrayList<String> fibo = new ArrayList<String>();
